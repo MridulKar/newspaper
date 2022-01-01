@@ -1,0 +1,266 @@
+.news-option{
+    padding-left: 40px;
+}
+
+.tab-style{
+    
+    
+}
+
+#tab-list {
+    float: left;
+    margin: 2px;
+    background: #ffffff;
+    padding: 0px;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #tab-list {
+        float: left;
+        margin: 5px;
+        background: #ffffff;
+        padding: 1px;
+        border: 1px solid #ccc;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+  }
+
+
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 0px;
+}
+
+
+#tab-image{
+    height:80px;width:100%;
+    align-items: center;
+}
+
+.hov:hover{
+    text-decoration: none !important;
+    color: red!important;
+}
+
+
+.border{
+    border-top: 1px solid black;
+    padding: 0px;
+    margin: 2px;
+    color: black;
+    border-radius:5px;
+}
+
+.border a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.border h4{
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.border img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.scroll{
+    margin-left: 15px;
+    padding: 10px 0px 1px 0px;
+    width: 100%;
+    margin-top: 8px;
+    color: white;
+    background: #d32f2f;
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll{
+        margin-left: 15px;
+        padding: 10px 0px 1px 0px;
+        width: 92%;
+        margin-top: 8px;
+        color: white;
+        background: #d32f2f;
+    }
+  }
+
+.tab-style{
+        position: relative;
+        left: 15px;
+        background:#117a65;
+        margin:0px;
+        padding:0px;
+        width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .tab-style{
+        position: relative;
+        left: 15px!important;
+        width:92%;
+        background:#117a65;
+}
+  }
+
+
+.foot{
+    margin-top:20px;
+    margin-left:62px;
+}
+
+@media only screen and (max-width: 600px) {
+   
+.foot{
+    margin-top:0px;
+    margin-left:0px;
+}
+  }
+
+  #foots{
+      margin-top:6px;
+  }
+
+  @media only screen and (max-width: 600px) {
+   
+    #foots{
+        margin-top:0px;
+    }
+      }
+
+
+
+
+		.my-active span{
+			background-color: #117A65 !important;
+			color: white !important;
+			border-color: #117A65 !important;
+		}
+
+       /*card carousel css starts here*/
+section{
+  
+    border-radius: 5px;
+    display: flex;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  
+  }
+  section::before{
+  
+  
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+    height: 20%;
+  }
+  
+  
+  .container .main-card{
+     justify-content: space-evenly;
+    width: 195%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    
+    width: calc(100% / 3 - 10px);
+    border-radius: 12px;
+    padding: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-6px);
+    border-radius: 12px;
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+  }
+  .card .content .name{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 0px!important;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background-color: #f8f9d2;
+  
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  
+  /*if needed it can be deleted*/
+  @media (max-width: 767px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 767px) {
+    .main-card .cards .card{
+      width: 100%;
+    }
+  }
+  /*if needed it can be deleted*/   
+
+        
